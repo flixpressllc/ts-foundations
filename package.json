@@ -1,0 +1,35 @@
+{
+  "name": "@flixpress/ts-foundations",
+  "version": "0.0.0",
+  "description": "Helpful ts interfaces and utilities",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "link": "npm run build && cd dist && npm link",
+    "release:major": "npm version major -m \"version bump to %s\" && npm publish",
+    "release:minor": "npm version minor -m \"version bump to %s\" && npm publish",
+    "release:patch": "npm version patch -m \"version bump to %s\" && npm publish",
+    "preversion": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flixpressllc/ts-foundations.git"
+  },
+  "keywords": [
+    "typescript",
+    "library"
+  ],
+  "author": "Israel Fernando <israel@flixpress.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flixpressllc/ts-foundations/issues"
+  },
+  "homepage": "https://github.com/flixpressllc/ts-foundations#readme",
+  "devDependencies": {
+    "typescript": "^2.9.2",
+    "tslint": "^5.11.0"
+  }
+}
