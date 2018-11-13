@@ -1,6 +1,6 @@
 {
   "name": "@flixpress/ts-foundations",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Helpful ts interfaces and utilities",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
